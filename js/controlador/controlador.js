@@ -9,8 +9,8 @@ Controlador.prototype = {
   agregarPregunta: function (pregunta, respuestas) {
     this.modelo.agregarPregunta(pregunta, respuestas);
   },
-  agregarVotos: function (preguntas, respuestas) {
-    this.modelo.agregarVotos(preguntas, respuestas);
+  agregarVotos: function (tituloPregunta, respuestas) {
+    this.modelo.agregarVotos(tituloPregunta, respuestas);
   },
   editarPregunta: function (id, idPregunta, pregunta) {
     this.modelo.editarPregunta(id, idPregunta, pregunta);

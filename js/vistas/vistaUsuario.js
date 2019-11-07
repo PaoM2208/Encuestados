@@ -87,11 +87,11 @@ VistaUsuario.prototype = {
   agregarVotos: function(){
     var contexto = this;
     $('#preguntas').find('div').each(function(){
-        var nombrePregunta = $(this).attr('value');
+        var tituloPregunta = $(this).attr('value');
         var id = $(this).attr('id');
-        var respuestaSeleccionada = $('input[name=' + id + ']:checked').val();
+        var respuestas = $('input[name=' + id + ']:checked').val();
         $('input[name=' + id + ']').prop('checked',false);
-        contexto.controlador.agregarVoto(nombrePregunta,respuestaSeleccionada);
+        contexto.controlador.agregarVotos(tituloPregunta, respuestas);
       });
   },
 

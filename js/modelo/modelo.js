@@ -30,7 +30,7 @@ Modelo.prototype = {
   },
 
   agregarVotos: function (tituloPregunta, respuestas) {
-    this.tituloPregunta.forEach(pregunta => {
+    this.preguntas.forEach(pregunta => {
       if (pregunta.textoPregunta === tituloPregunta) {
         pregunta.cantidadPorRespuesta.forEach(respuesta => {
           respuestas === respuesta.textoRespuesta ? respuesta.cantidad += 1 : 0;
